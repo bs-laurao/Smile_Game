@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Onde está o sprigatito?</title>
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
-    <!-- Arquivo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="./css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    
-    <img src="./images/onde.png" alt="onde" width="1000" >
-  
+    <!-- Imagem responsiva -->
+   <img src="./images/onde.png" alt="onde" class="img-fluid img-topo">
 
-        
+  
+    <div class="container"> <!-- Container principal adicionado -->
       <div id="linha1" class="row justify-content-center">
         <div id="0" class="inicial" onclick="verifica(this)"></div>
         <div id="1" class="inicial" onclick="verifica(this)"></div>
@@ -27,14 +24,12 @@
       </div>
       <div class="row justify-content-center" id="div1">
         <p id="resposta"></p>
-        <button id="joganovamente">Jogar novamente</button>
-        <button id="reiniciar" class="invisivel">Reiniciar</button>
+        <button id="joganovamente" class="btn btn-primary">Jogar novamente</button>
+        <button id="reiniciar" class="btn btn-secondary invisivel">Reiniciar</button>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script> 
-    <script src="./js/jogo.js"></script>
     
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="./js/jogo.js"></script>
+</body>
 </html>
